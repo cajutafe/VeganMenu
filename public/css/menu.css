@@ -1,0 +1,9 @@
+.img_menu{
+    width: 200px;
+}
+
+.dia_sem, .nom_plato{
+    align-items: center;
+    margin: 20px;
+    font-family: var(--text_gen);
+}

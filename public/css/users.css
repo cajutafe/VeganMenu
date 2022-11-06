@@ -1,0 +1,41 @@
+*{
+    font-family: 'Futura';
+}
+
+input[type="checkbox"]{
+    width: 10%;
+    height: 20px;
+    margin-left: -12px;
+
+}
+
+label a{
+    margin-left: 0;
+    transition: all .3s;
+}
+
+label a:hover{
+    color: var(--contraste);
+    text-decoration: underline;
+}
+
+main p{
+    font-weight: 100;
+}
+
+p a:hover{
+    color: var(--contraste);
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+responseSignUP, .signInForm a{
+    color: var(--contraste);
+    font-size: 0.8em;
+    transition: all .3s;
+}
+
+.signInForm a:hover{
+    color: var(--logo);
+    text-decoration: underline;
+}

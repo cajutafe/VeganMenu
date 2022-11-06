@@ -1,0 +1,16 @@
+<header class="nav-bar">
+  <a href="/"><img src="img/Recurso 5.svg" alt="logo" class="logo_header"></a>
+  <nav class="nav-bar-desktop nav-bar-expand-m">
+
+    <% if (!idUsuario) { %>
+      <a href="/manifesto" <% if (pageName === 'manifesto'){ %> class="active" <% } %> > <span>Manifesto vegano</span></a>
+      <a href="/users" <% if (pageName === 'users'){ %> class="active" <% } %> ><span><i class=" fa-regular fa-user"></i> Entrar/Registro</span></a>
+      <% } else { %>
+        <a href="/tumenu" <% if (pageName === 'tumenu'){ %> class="active" <% } %> ><span>Crea tu menú</span></a>
+        <a href="/manifesto" <% if (pageName === 'manifesto'){ %> class="active" <% } %> ><span>Manifesto vegano</span></a>
+        <a href="/logout" "><span><i class=" fa-regular fa-user"></i> Cerrar Sesión</span></a>
+        <% } %>
+  </nav>
+  <!-- Menú hamburguesa -->
+  <i class="fas fa-bars burger d-none"></i>
+</header>

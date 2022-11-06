@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación Contraseña - Vegan Menu</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/jpg" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/users.css">
+    <script src="https://kit.fontawesome.com/9597befe8a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <%- include("partials/header") %>
+
+        <div class="row j-c-center">
+            <div class="col-x-4">
+                <h1 class="text-center">Recuperación de contraseña</h1>
+                <form id="form" class="forgotPassForm">
+                    <input type="email" placeholder="E-mail*" name="forgotPassEmail">
+                    <input type="submit" class="submit" value="Recuperar contraseña">
+                    <a href="/users" class="text-center mt-1 a_forms">Volver al formulario de entrada</a>
+                    <div class="responseforgotPass div-res-post text-center mt-1"></div>
+                </form>
+            </div>
+        </div>
+
+        <!-- <main class="text-center">
+        <p>¿Ya eres miembro? <a href="/">Inicia Sesión</a></p>
+    </main> -->
+
+        <%- include("partials/footer") %>
+
+
+            <script type="module" src="js/forgotPass.js"></script>
+            <script src="js/responsive.js"></script>
+</body>
+
+</html>

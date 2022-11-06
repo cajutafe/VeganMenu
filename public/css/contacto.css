@@ -1,0 +1,161 @@
+:root{
+    --contraste: #002a3d;
+    --logo: #fe9462;
+    --text_btn: #fff;
+    --foot_border: #3d1300;
+    --foot_hover: #ffdccc;
+}
+
+h1{
+    text-align: center;
+    margin: 100px 0 25px 0;
+    letter-spacing: 7px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 50px auto 100px auto;
+}
+
+input{
+    font-family: 'Futura';
+    font-size: 0.8em;
+    width: 491px;
+    height: 50px;
+    padding: 0 15px;
+    background: transparent;
+    outline: none;
+    color: var(--logo);
+    border: 3px solid var(--logo);
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover{
+    background-color: var(--logo);
+    color: var(--contraste);
+}
+
+textarea{
+    font-family: 'Futura';
+    font-size: 0.8em;
+    width: 491px;
+    height: 200px;
+    padding: 15px;
+    resize: none;
+    background: transparent;
+    outline: none;
+    color: var(--logo);
+    border: 3px solid var(--logo);
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    
+}
+
+textarea:hover{
+    background-color: var(--logo);
+    color: var(--contraste);
+}
+
+.submit{
+    cursor: pointer;
+    border-bottom: 3px solid var(--logo);
+}
+
+.submit:hover{
+    color: var(--text_btn);
+}
+
+.response{
+    font-family: 'Futura';
+    color: var(--logo);
+    margin: 10px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+label{
+    font-family: 'Futura';
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+    color: var(--logo);
+    font-size: 0.8em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
+    color: var(--contraste);
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: var(--logo);
+    font-size: 0.8em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: var(--contraste);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--logo);
+    font-size: 0.8em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+    color: var(--contraste);
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color: var(--logo);
+    font-size: 0.8em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: var(--contraste);
+}
+
+/* placeholder hover  */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: var(--text_btn);
+    font-size: 0.8em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: var(--text_btn);
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: var(--text_btn);
+    font-size: 0.8em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: var(--text_btn);
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+    color: var(--text_btn);
+    font-size: 0.8em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: var(--text_btn);
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+    color: var(--text_btn);
+    font-size: 0.8em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+    color: var(--text_btn);
+}

@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'Futura';
+    src: url(fonts/Futura.ttc);
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --contraste: #002a3d;
+    --logo: #fe9462;
+    --text_btn: #fff;
+    --foot_border: #3d1300;
+    --foot_hover: #ffdccc;
+    --text_gen: 'Roboto', sans-serif;
+    --text_titol: font-family: 'Futura';
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: var(--contraste)
+}
+
+header {
+    padding: 30px;
+    background-color: var(--contraste);
+    font-family: var(--text_titol);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+.logo_header {
+    height: 50px;
+}
+
+nav a,
+a {
+    text-decoration: none;
+    color: var(--logo);
+    margin: 0 10px 0 10px;
+    transition: all .3s;
+    border: 3px solid transparent;
+}
+
+nav a:hover {
+    border-bottom: 3px solid var(--logo);
+}
+
+.img_home {
+    width: 80%;
+    margin: 20px auto;
+    /* height: 1000px;  */
+    padding: 50px;
+    text-align: center;
+    background-image: url("../img/portada.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.logo_incio {
+    position: static;
+    height: 200px;
+}
+
+.main_home {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    padding: 10px;
+}
+
+main section {
+    width: 80%;
+
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'Futura';
+    margin: 5px 0;
+}
+
+p {
+    font-family: var(--text_gen);
+    color: var(--contraste);
+}
+
+main aside {
+    width: 20%;
+    margin-left: 30px;
+}
+
+aside ul {
+    list-style: none;
+    margin: 20px 5px;
+}
+
+aside li {
+    margin: 10px 0 10px -15px;
+    font-family: var(--text_gen);
+    transition: all .3s;
+
+}
+
+aside li a:hover {
+    /* border-bottom: 1px solid var(--logo); */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background: transparent;
+    outline: none;
+    color: var(--logo);
+    border: 3px solid var(--logo);
+    /* border-bottom: transparent; */
+    font-family: 'Futura';
+    font-size: 1em;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    /* border: none;
+    border: 5px solid var(--logo); */
+    color: var(--text_btn);
+    background-color: var(--logo);
+}
+
+/* div h2{
+    text-align: center;
+    margin: 20px 0;
+} */
+
+.logos{
+    width: 50px;
+    margin: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bs-line{
+    align-items: baseline;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 3px solid var(--foot_border);
+    margin-top: 25px;
+    padding: 25px;
+    font-family: 'Futura';
+}
+
+footer .nosotros {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_sponsor {
+    height: 50px;
+}
+
+footer h4 {
+    color: var(--logo);
+}
+
+footer a,
+h4 {
+    font-size: 1.3em;
+}
+
+footer a:hover {
+    color: var(--foot_border);
+    transition: all .3s;
+}
+
+
+.active{
+    border-bottom: 3px solid var(--logo);
+}
+
+/* Estilos generales */
+
+.span-color{
+    color: var(--logo);
+}
+
+.w-350{
+    width: 350px;
+}
+
+.mar-20{
+    margin: 20px 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.d-none {
+    display: none !important;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-column{
+    flex-direction: column;
+}
+
+.j-c-center {
+    justify-content: center;
+}
+
+.j-c-spar{
+    justify-content: space-around;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mb-1{
+    margin-bottom: 10px;
+}
+
+.mb-2{
+    margin-bottom: 20px;
+}
+
+.a_forms{
+    color: var(--contraste);
+    font-size: 0.8em;
+    transition: all .3s;
+}
+
+.a_forms:hover{
+    color: var(--logo);
+    text-decoration: underline;
+}
+
+.div-res-post{
+    color: var(--logo);
+    font-weight: 700;
+    margin-top: 10px;
+}

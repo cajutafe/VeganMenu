@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/jpg" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/9597befe8a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <%- include("partials/header") %>
+
+    <h1 class="text-center">Formulario de Contacto</h1>
+    <form id="form" class="topBefore">
+        <input type="text" id="nom" placeholder="Nombre*" name="nombre">
+        <input type="email" id="email" placeholder="E-mail*" name="email">
+        <textarea id="mensaje" placeholder="Deja tu mensaje* (mín10 / máx 100)" name="mensaje"></textarea>
+        <input type="submit" class="submit" value="¡Enviar!">
+        <div class="response div-res-post text-center"></div>
+    </form>
+
+    <%- include("partials/footer") %>
+
+    <script src="js/responsive.js"></script> 
+    <script type="module" src="js/contact.js"></script>
+</body>
+
+</html>

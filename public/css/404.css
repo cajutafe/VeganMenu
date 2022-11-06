@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Futura';
+    src: url(fonts/Futura.ttc);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --contraste: #002a3d;
+    --logo: #fe9462;
+    --text_btn: #fff;
+    --foot_border: #3d1300;
+    --foot_hover: #ffdccc;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    color: var(--contraste) 
+}
